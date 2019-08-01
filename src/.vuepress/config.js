@@ -25,7 +25,7 @@ module.exports = {
   },
 
   // Theme to use
-  theme: 'meteorlxy',
+  theme: 'tomopict',
 
   // Theme config
   themeConfig: {

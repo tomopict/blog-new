@@ -1,3 +1,16 @@
 body {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Helvetica", "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic"!important; 
+}
+@media (max-width: 767px) {
+  .navbar .navbar-links {
+    display: block!important;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    transition: all 0.25s ease-out!important;
+    left: 100vw;
+  }
+  .navbar .navbar-links.show {
+    transform: translateX(-100vw);
+  }
 }

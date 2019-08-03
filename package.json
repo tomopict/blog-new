@@ -4,13 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.0.0-rc.1"
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "vuepress": "^1.0.3"
   },
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
   "dependencies": {
+    "@sentry/browser": "^5.5.0",
+    "@sentry/integrations": "^5.5.0",
     "vuepress-theme-meteorlxy": "^1.1.0"
   }
 }

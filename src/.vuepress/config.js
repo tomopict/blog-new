@@ -6,14 +6,18 @@ module.exports = {
   description: 'Tomopict',
 
   head: [
+      ['link', { href: '/css/style.css', rel: 'stylesheet'}],
+      ['link', { rel: 'icon', type: 'image/jpg', href: '/img/favicon.jpg' }],
+      ['meta', { name: 'keywords', content: 'tech, vue' }],
+    ['meta', { name: 'og:title', content: 'tomopictのblog' }],
     [
-      'link',
-      {
-        href: '/css/style.css',
-        rel: 'stylesheet'
-      }
-    ]
-  ],      
+      'meta',
+      { name: 'og:description', content: '技術関連を中心に書いていくblogです' }
+    ],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:image', content: 'image/jpg' }],
+    ['meta', { name: 'og:url', content: 'https://tomopict.netlify.com/' }]
+  ],
 
   // Language of your website
   locales: {
@@ -24,8 +28,12 @@ module.exports = {
     }
   },
 
+  plugins: [
+    ['@vuepress/google-analytics', { ga: 'UA-131752322-1' }]
+  ],
+
   // Theme to use
-  theme: 'tomopict',
+  theme: 'meteorlxy',
 
   // Theme config
   themeConfig: {
@@ -135,7 +143,10 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
+      { text: 'Categories', link: '/posts/categories/', exact: false },
+      { text: 'Tags', link: '/posts/tags/', exact: false },
       { text: 'Github', link: 'https://github.com/meteorlxy/vuepress-theme-meteorlxy' },
+      { text: 'Qiita', link: 'https://qiita.com/tomopict' },
     ],
 
     // Comments config. See the [Posts Comments] section below.

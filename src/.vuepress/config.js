@@ -147,6 +147,7 @@ module.exports = {
       { text: 'Tags', link: '/posts/tags/', exact: false },
       { text: 'Github', link: 'https://github.com/meteorlxy/vuepress-theme-meteorlxy' },
       { text: 'Qiita', link: 'https://qiita.com/tomopict' },
+      { text: 'About', link: '/about/', exact: false },
     ],
 
     // Comments config. See the [Posts Comments] section below.

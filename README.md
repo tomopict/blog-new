@@ -13,7 +13,7 @@ npm 6.4.1
 
 ## Usage
 ```
-$ yarn dev
+$ yarn serve
 
 $ yarn build
 ```
